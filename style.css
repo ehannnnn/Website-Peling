@@ -19,6 +19,11 @@ html {
 .nav-logo {
   font-size: 18px;
   font-weight: bold;
+  color: #fdc10e;
+}
+
+.nav-logo span {
+  color: #357529;
 }
 
 .nav-links {
