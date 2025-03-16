@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:wght@100;300;400;700&display=swap');
+
+
+:root {
+  --primary-color: #357529;
+  --text-dark: #171717;
+  --text-light: #737373;
+  --extra-light: #f4f6f5;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --header-font: "Merriweather", serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -6,6 +19,7 @@ html {
   font-family: 'Poppins', sans-serif;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .nav-header {
@@ -17,7 +31,7 @@ html {
 }
 
 .nav-logo {
-  font-size: 18px;
+  font-size: 21px;
   font-weight: bold;
   color: #fdc10e;
 }
@@ -42,6 +56,56 @@ html {
 
 .nav-links ul li a {
   text-decoration: none;
-  color: #000;
+  color: var(--text-dark);
   padding: 10px;
+}
+
+.section_container {
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+.header_image_container {
+  position: relative;
+  min-height: 500px;
+  background-image: linear-gradient(
+      to right,
+      rgba(44, 56, 85, 0.8),
+      rgba(100, 125, 187, 0.1)
+    ),
+    url("assets/46966d9a-5c02-440b-9e69-ce00ce8ae223.webp");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2rem;
+}
+
+.header_content {
+  max-width: 700px;
+  padding: 7rem 4rem;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translate(0, 180px); */
+}
+
+.header_content h3 {
+  color: #fdc10e;
+}
+
+.header_content h3 span{
+  color: #357529;
+}
+
+.header_content h1 {
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  line-height: 3rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.header_content p {
+  color: var(--extra-light);
 }
