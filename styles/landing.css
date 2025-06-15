@@ -88,14 +88,22 @@ header{
 .header_container {
   position: relative;
   min-height: 500px;
+ HEAD
   background-image: url("../assets/53044995125_1ca1ca5e6b_b.jpg");
+
+  background-image: url("/assets/53044995125_1ca1ca5e6b_b.jpg");
+ 813be029b98791e593bb20f610343bc53b0a3111
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 2rem;
 }
 
+ HEAD
 .header_content { 
+=======
+.header_content {
+813be029b98791e593bb20f610343bc53b0a3111
     /* max-width: 700px;
   padding: 7rem 4rem; */
   display: flex;
@@ -207,7 +215,11 @@ section{
 .content_donate {
   position: relative;
   min-height: 500px;
+HEAD
   background-image: url("../assets/beautiful-scenery-rainforest-covered-fog-near-beautiful-lake-with-buildings.jpg");
+
+  background-image: url("/assets/beautiful-scenery-rainforest-covered-fog-near-beautiful-lake-with-buildings.jpg");
+ 813be029b98791e593bb20f610343bc53b0a3111
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
