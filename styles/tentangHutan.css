@@ -78,7 +78,7 @@ ul {
 }
 
 .header_hutan {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../assets/bg_tentangHutan.jpeg");
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../assets/Premium\ Photo\ _\ Indonesian\ scenery\ tropical\ forest\ waterfalls\ with\ beautiful\ green\ leaves.jpeg");
     background-size: cover;                 
     background-position: center;                
     background-repeat: no-repeat;               
@@ -99,19 +99,82 @@ ul {
     font-weight: 700;
 }
 
-.title-1 {
+.title{
     color: #357529;
     font-size: 70px;
-    font-weight: 800;
-}
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+} 
 
 .content-1{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10rem;
+    justify-content: start;
+    align-items: start;
+    gap: 3rem;
+    margin: 50px;
 }
+
+.content-1 p{
+  font-size: 20px;
+}
+
+.text {
+    flex: 1;
+    padding-right: 20px;
+    margin: 10px;
+    margin-top: 0px;
+    line-height: 1.6;
+}
+
+.text h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container-hujan-tropis{
+  display: flex;
+  flex-direction:row ;
+  align-items: start;
+  justify-content: start;
+  margin: 50px;
+  text-align: justify;
+  gap: 15rem;
+}
+.container-hujan-tropis p{
+  font-size: 25px;
+}
+.container-hujan-tropis-image {
+    width: 35rem;
+    height: auto;
+    border-radius: 5px;
+}
+
+.kolom-container {
+  display: flex;
+  gap: 20px; /* jarak antar kolom */
+  margin: 10px;
+}
+
+.kolom {
+  flex: 1;
+  margin: 40px;
+}
+
+.kolom h2{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.kolom p {
+  margin: 0;
+  font-size: 25px;
+}
+
+
+
 
 
 footer {
