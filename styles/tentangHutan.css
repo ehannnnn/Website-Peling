@@ -10,6 +10,9 @@
   --white: #ffffff;
   --max-width: 1200px;
 }
+p {
+ text-align: justify;
+}
 
 html {
   scroll-behavior: smooth;
@@ -77,6 +80,8 @@ ul {
   transition: backround 0.5s smooth;
 }
 
+
+
 .header_hutan {
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../assets/Premium\ Photo\ _\ Indonesian\ scenery\ tropical\ forest\ waterfalls\ with\ beautiful\ green\ leaves.jpeg");
     background-size: cover;                 
@@ -143,18 +148,20 @@ ul {
   text-align: justify;
   gap: 15rem;
 }
+
 .container-hujan-tropis p{
   font-size: 25px;
 }
-.container-hujan-tropis-image {
+
+.container-hujan-tropis img{
     width: 35rem;
     height: auto;
-    border-radius: 5px;
+    border-radius: 1rem;
 }
 
 .kolom-container {
   display: flex;
-  gap: 20px; /* jarak antar kolom */
+  gap: 20px;
   margin: 10px;
 }
 
@@ -172,8 +179,6 @@ ul {
   margin: 0;
   font-size: 25px;
 }
-
-
 
 
 
