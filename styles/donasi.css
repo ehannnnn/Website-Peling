@@ -1,0 +1,341 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:wght@100;300;400;700&display=swap');
+:root {
+    --primary-color: #357529;
+    --secondary-color: #fdc10e;
+    --text-dark: #171717;
+    --text-light: #737373;
+    --extra-light: #f4f6f5;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #ffffff;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+}
+
+img {
+    display: flex;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+    position: relative;
+}
+
+.nav-logo img {
+    height: 110px;
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: var(--text-dark);
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-links ul li a:hover {
+    /* text-decoration: none;
+  color: var(--primary-color);
+  padding: 10px; */
+    background-color: var(--primary-color);
+    border-radius: 5rem;
+    color: var(--extra-light);
+    transition: backround 0.5s smooth;
+}
+
+.logo img {
+    height: 100px;
+    max-height: 100%;
+    /* pastikan logo tidak lebih tinggi dari navbar */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    /* Pastikan tinggi tetap */
+    background-image: url('../assets/beautiful-mountain-landscape-azores-archipelago-portugal.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    /* Cegah overflow */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Overlay hitam transparan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.hero-overlay h1 {
+    color: var(--secondary-color);
+    /* Warna kuning terang (seperti Figma) */
+    font-size: 3rem;
+    /* opsional: biar lebih besar */
+    font-weight: bold;
+}
+
+.hero-overlay h3{
+    max-width: 800px;
+}
+
+
+.form-section {
+    padding: 2rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-section input,
+.form-section textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+}
+
+.form-donasi {
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.form-left {
+    flex: 2;
+}
+
+.form-left form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-left label {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.form-left input,
+.form-left select,
+.form-left textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 0.3rem;
+}
+
+.row {
+    display: flex;
+    gap: 1rem;
+}
+
+.col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox {
+    margin: 1rem 0;
+}
+
+.form-left button {
+    background-color: #43a047;
+    color: #fff;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.form-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+/* Gambar orang (organizer) */
+
+.organizer-card {
+    background-color: #eee;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 250px;
+}
+
+.organizer-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0.5rem auto;
+}
+
+
+/* Gambar hutan (di bawahnya) */
+
+.donation-image {
+    width: 100%;
+    max-width: 250px;
+    /* Biar tidak terlalu besar */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+button {
+    background-color: #43a047;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--extra-light);
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem 1rem;
+}
+
+.footer_logo {
+    width: 150px;
+    margin-top: -2rem;
+    margin-bottom: -2rem;
+}
+
+.footer_col p {
+    max-width: 300px;
+    margin-block: 2rem;
+    color: var(--text-light);
+}
+
+.footer_socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: -2rem;
+}
+
+.footer_socials a {
+    display: inline-block;
+    padding: 7px 10px;
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    border-radius: 100%;
+}
+
+.footer_socials a:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.footer_col h4 {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.footer_links {
+    display: grid;
+    gap: 1rem;
+}
+
+.footer_links a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-light);
+}
+
+.footer_links a:hover {
+    color: var(--primary-color);
+}
+
+.footer_links a span {
+    font-size: 1.25rem;
+}
+
+.footer_bar {
+    padding: 1rem;
+    font-size: 0.7rem;
+    color: var(--text-light);
+    text-align: center;
+    text-decoration: none;
+}
