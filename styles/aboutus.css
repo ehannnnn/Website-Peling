@@ -14,8 +14,6 @@
 html {
   scroll-behavior: smooth;
   background-color: var(--extra-light);
-
-
 }
 
 * {
@@ -52,17 +50,7 @@ ul {
   height: 110px;
 }
 
-
-.nav-links ul {
-  display: flex;
-  gap: 18px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .nav-links ul li a {
-  text-decoration: none;
   color: var(--text-dark);
   padding: 10px;
   cursor: pointer;
@@ -87,11 +75,10 @@ ul {
 }
 
 .about_us h1{
-  /* color: black; */
-  color: linear-gradien();
   text-align: center;
   margin: 1rem;
   font-size: 4rem;
+  font-weight: 700;
 }
 .foto-1{
   display: flex;
@@ -161,6 +148,7 @@ ul {
 .footer_links {
   display: grid;
   gap: 1rem;
+  padding: 0;
 }
 
 .footer_links a {

@@ -3,40 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+   <link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+			crossorigin="anonymous"
+		/>
     <link rel="stylesheet" href="../styles/tentangHutan.css" />
     <title>Aetherna</title>
   </head>
 
   <body>
     <!-- Navbar Start -->
-    <nav class="header" id="home">
-      <div class="nav-header">
-        <div class="nav-logo">
-          <a class="logo" href="landing_page.html">
-            <img
-              src="../assets/20250605_094336.png"
-              alt="Logo"
-              width="30"
-              height="24"
-              class="d-inline-block align-text-top"
-            />
-          </a>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="home">
+			<div
+				class="container-fluid"
+				style="margin-left: 2rem; margin-right: 2rem; margin-top: 0px"
+			>
+				<!-- Logo -->
+				<a class="navbar-brand" href="landing_page.html">
+					<img
+						src="../assets/20250605_094336.png"
+						alt="Logo"
+						class="d-inline-block align-text-top"
+						style="width: 7rem; height: auto"
+					/>
+				</a>
 
-        <div class="nav-links">
-          <ul>
-            <li><a href="#berita">Berita</a></li>
-            <li><a href="#donasi">Donasi</a></li>
-            <li><a href="#">Tentang Hutan</a></li>
-            <li><a href="about_aetherna.html">Tentang Kami</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+				<!-- Tombol toggle untuk mobile -->
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNavDropdown"
+					aria-controls="navbarNavDropdown"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- Menu navbar -->
+				<div class="collapse navbar-collapse nav-links" id="navbarNavDropdown">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#berita" target="_blank">Berita</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="laman_donasi.html" target="_blank"
+								>Donasi</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="tentang_hutan.html" target="_blank"
+								>Tentang Hutan</a
+							>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								tentang Kami
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a class="dropdown-item" href="about_us.html"
+										>Team Aetherna</a
+									>
+								</li>
+								<li>
+									<a class="dropdown-item" href="about_aetherna.html"
+										>seputar Aetherna</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
     <!-- Navbar End -->
 
     <!-- header start -->

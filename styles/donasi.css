@@ -49,30 +49,18 @@ ul {
     height: 110px;
 }
 
-.nav-links ul {
-    display: flex;
-    gap: 18px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
 .nav-links ul li a {
-    text-decoration: none;
-    color: var(--text-dark);
-    padding: 10px;
-    cursor: pointer;
-    transition: 0.3s;
+  color: var(--text-dark);
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .nav-links ul li a:hover {
-    /* text-decoration: none;
-  color: var(--primary-color);
-  padding: 10px; */
-    background-color: var(--primary-color);
-    border-radius: 5rem;
-    color: var(--extra-light);
-    transition: backround 0.5s smooth;
+  background-color: var(--primary-color);
+  border-radius: 5rem;
+  color: var(--extra-light);
+  transition: backround 0.5s smooth;
 }
 
 .logo img {
@@ -313,13 +301,15 @@ footer {
 }
 
 .footer_links {
+    padding: 0;
     display: grid;
+    list-style-type: none;
     gap: 1rem;
 }
 
 .footer_links a {
-    display: flex;
-    align-items: center;
+    /* justify-content: start; */
+    
     gap: 10px;
     color: var(--text-light);
 }

@@ -1,230 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../styles/donasi.css" />
-    <title>Aetherna</title>
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="../styles/donasi.css" />
+		<title>Aethera</title>
+	</head>
 
-  <body>
-    <!-- Navbar Start -->
-    <nav class="header" id="home">
-      <div class="nav-header">
-        <div class="nav-logo">
-          <a class="logo" href="landing_page.html">
-            <img
-              src="../assets/20250605_094336.png"
-              alt="Logo"
-              width="30"
-              height="24"
-              class="d-inline-block align-text-top"
-            />
-          </a>
-        </div>
+	<body>
+		<!-- Navbar Start -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light" id="home">
+			<div
+				class="container-fluid"
+				style="margin-left: 2rem; margin-right: 2rem; margin-top: 0px"
+			>
+				<!-- Logo -->
+				<a class="navbar-brand" href="landing_page.html">
+					<img
+						src="../assets/20250605_094336.png"
+						alt="Logo"
+						class="d-inline-block align-text-top"
+						style="width: 7rem; height: auto"
+					/>
+				</a>
 
-        <div class="nav-links">
-          <ul class="nav-links">
-            <li><a href="landing_page.html">Beranda</a></li>
-            <li><a href="berita_selengkapnya.html">Berita</a></li>
-            <li><a href="tentang_hutan.html">Tentang Hutan</a></li>
-            <li><a href="about_aetherna.html">Tentang kami</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Navbar End -->
+				<!-- Tombol toggle untuk mobile -->
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNavDropdown"
+					aria-controls="navbarNavDropdown"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-    <section class="hero">
-      <div class="hero-overlay">
-        <h1>Donasi</h1>
-        <h3>
-          Selamatkan Hutan, Selamatkan Bumi. Satu donasi kecilmu hari ini bisa
-          jadi harapan besar untuk masa depan hijau.
-        </h3>
-      </div>
-    </section>
+				<!-- Menu navbar -->
+				<div class="collapse navbar-collapse nav-links" id="navbarNavDropdown">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#berita" target="_blank">Berita</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="laman_donasi.html" target="_blank"
+								>Donasi</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="tentang_hutan.html" target="_blank"
+								>Tentang Hutan</a
+							>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								tentang Kami
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a class="dropdown-item" href="about_us.html"
+										>Team Aetherna</a
+									>
+								</li>
+								<li>
+									<a class="dropdown-item" href="about_aetherna.html"
+										>seputar Aetherna</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- Navbar End -->
 
-    <!-- Form Donasi -->
-    <section class="form-donasi">
-      <div class="form-container">
-        <div class="form-left">
-          <form id="donasiForm" action="selesai_donasi.html" method="get">
-            <label>Tulis Donasi Anda</label>
-            <input type="number" name="jumlah" placeholder="Rp" required />
+		<section class="hero">
+			<div class="hero-overlay">
+				<h1>Donasi</h1>
+				<h3>
+					Selamatkan Hutan, Selamatkan Bumi. Satu donasi kecilmu hari ini bisa
+					jadi harapan besar untuk masa depan hijau.
+				</h3>
+			</div>
+		</section>
 
-            <label>Nama Lengkap</label>
-            <input
-              type="text"
-              name="nama"
-              placeholder="Nama Depan dan Nama Belakang"
-              required
-            />
+		<!-- Form Donasi -->
+		<section class="form-donasi">
+			<div class="form-container">
+				<div class="form-left">
+					<form id="donasiForm" action="selesai_donasi.html" method="get">
+						<label>Tulis Donasi Anda</label>
+						<input type="number" name="jumlah" placeholder="Rp" required />
 
-            <label>Email</label>
-            <input type="email" name="email" placeholder="Email" required />
+						<label>Nama Lengkap</label>
+						<input
+							type="text"
+							name="nama"
+							placeholder="Nama Depan dan Nama Belakang"
+							required
+						/>
 
-            <div class="row">
-              <div class="col">
-                <label>Negara</label>
-                <input type="text" name="negara" placeholder="Pilih" />
-              </div>
-              <div class="col">
-                <label>Kode Pos</label>
-                <input type="text" name="kodepos" placeholder="Kode Pos" />
-              </div>
-            </div>
+						<label>Email</label>
+						<input type="email" name="email" placeholder="Email" required />
 
-            <label>Tulis Doa dan Harapan (Opsional)</label>
-            <textarea name="doa" placeholder="Tulis di sini..."></textarea>
+						<div class="row">
+							<div class="col">
+								<label>Negara</label>
+								<input type="text" name="negara" placeholder="Pilih" />
+							</div>
+							<div class="col">
+								<label>Kode Pos</label>
+								<input type="text" name="kodepos" placeholder="Kode Pos" />
+							</div>
+						</div>
 
-            <label for="metodePembayaran">Metode Pembayaran</label>
-            <select id="metodePembayaran" name="metode">
-              <option value="">Pilih</option>
-              <option value="bank">Transfer Bank</option>
-              <option value="ewallet">E-Wallet</option>
-              <option value="qris">QRIS</option>
-            </select>
+						<label>Tulis Doa dan Harapan (Opsional)</label>
+						<textarea name="doa" placeholder="Tulis di sini..."></textarea>
 
-            <!-- Transfer Bank -->
-            <div id="bankField" class="metode-field" style="display: none">
-              <label>Nomor Rekening:</label>
-              <input type="text" value="1234567890 (Aethera Bank)" readonly />
-            </div>
+						<label for="metodePembayaran">Metode Pembayaran</label>
+						<select id="metodePembayaran" name="metode">
+							<option value="">Pilih</option>
+							<option value="bank">Transfer Bank</option>
+							<option value="ewallet">E-Wallet</option>
+							<option value="qris">QRIS</option>
+						</select>
 
-            <!-- E-Wallet -->
-            <div id="ewalletField" class="metode-field" style="display: none">
-              <label>Pilih E-Wallet:</label>
-              <select id="jenisEwallet" name="jenis-ewallet">
-                <option value="">Pilih</option>
-                <option value="Dana">Dana</option>
-                <option value="OVO">OVO</option>
-                <option value="Gopay">Gopay</option>
-              </select>
+						<!-- Transfer Bank -->
+						<div id="bankField" class="metode-field" style="display: none">
+							<label>Nomor Rekening:</label>
+							<input type="text" value="1234567890 (Aethera Bank)" readonly />
+						</div>
 
-              <!-- Nomor E-Wallet -->
-              <div id="nomorEwallet" style="margin-top: 1rem; display: none">
-                <label>Nomor E-Wallet:</label>
-                <input type="text" id="nomorEwalletInput" readonly />
-              </div>
-            </div>
+						<!-- E-Wallet -->
+						<div id="ewalletField" class="metode-field" style="display: none">
+							<label>Pilih E-Wallet:</label>
+							<select id="jenisEwallet" name="jenis-ewallet">
+								<option value="">Pilih</option>
+								<option value="Dana">Dana</option>
+								<option value="OVO">OVO</option>
+								<option value="Gopay">Gopay</option>
+							</select>
 
-            <!-- QRIS -->
-            <div id="qrisField" class="metode-field" style="display: none">
-              <label>Scan QRIS:</label><br />
-              <img
-                src="../assets/qris.jpeg"
-                alt="QRIS"
-                style="width: 200px; margin-top: 10px"
-              />
-            </div>
+							<!-- Nomor E-Wallet -->
+							<div id="nomorEwallet" style="margin-top: 1rem; display: none">
+								<label>Nomor E-Wallet:</label>
+								<input type="text" id="nomorEwalletInput" readonly />
+							</div>
+						</div>
 
-            <label class="checkbox"
-              ><input type="checkbox" name="anonim" /> Donasi Sebagai
-              Anonim</label
-            >
+						<!-- QRIS -->
+						<div id="qrisField" class="metode-field" style="display: none">
+							<label>Scan QRIS:</label><br />
+							<img
+								src="../assets/qris.jpeg"
+								alt="QRIS"
+								style="width: 200px; margin-top: 10px"
+							/>
+						</div>
 
-            <button type="submit">Donasi</button>
-          </form>
-        </div>
+						<label class="checkbox"
+							><input type="checkbox" name="anonim" /> Donasi Sebagai
+							Anonim</label
+						>
 
-        <div class="form-right">
-          <div class="organizer-card">
-            <p>Organizer</p>
-            <img
-              src="../assets/pofil.jpeg"
-              alt="Organizer"
-              class="organizer-img"
-            />
-            <p>Someone</p>
-          </div>
-          <img
-            src="../assets/Lush Green Rainforest Canopy Viewed From Above Showcases Diverse Vegetation and Thriving.jpg"
-            alt="Hutan"
-            class="donation-image"
-          />
-        </div>
-      </div>
-    </section>
+						<button type="submit">Donasi</button>
+					</form>
+				</div>
 
-    <!-- Footer Start -->
-    <footer id="contact">
-      <div class="footer_container">
-        <div class="footer_col">
-          <div class="footer_logo">
-            <a href="#home"
-              ><img src="../assets/20250605_094336.png" alt="Logo"
-            /></a>
-          </div>
-          <ul class="footer_socials">
-            <li>
-              <a href="#"><i class="ri-facebook-fill"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-instagram-line"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-youtube-line"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-linkedin-fill"></i></a>
-            </li>
-          </ul>
-        </div>
+				<div class="form-right">
+					<div class="organizer-card">
+						<p>Organizer</p>
+						<img
+							src="../assets/pofil.jpeg"
+							alt="Organizer"
+							class="organizer-img"
+						/>
+						<p>Someone</p>
+					</div>
+					<img
+						src="../assets/Lush Green Rainforest Canopy Viewed From Above Showcases Diverse Vegetation and Thriving.jpg"
+						alt="Hutan"
+						class="donation-image"
+					/>
+				</div>
+			</div>
+		</section>
 
-        <div class="footer_col">
-          <h4>Menu Utama</h4>
-          <ul class="footer_links">
-            <li><a href="landing_page.html" target="_blank">Beranda</a></li>
-            <li><a href="#" target="_blank">Berita</a></li>
-            <li><a href="laman_donasi.html" target="_blank">Donasi</a></li>
-            <li>
-              <a href="tentang_hutan.html" target="_blank">Tentang Hutan</a>
-            </li>
-          </ul>
-        </div>
+		<!-- Footer Start -->
+		<footer id="contact">
+			<div class="footer_container">
+				<div class="footer_col">
+					<div class="footer_logo">
+						<a href="#home"
+							><img src="../assets/20250605_094336.png" alt="Logo"
+						/></a>
+					</div>
+					<ul class="footer_socials">
+						<li>
+							<a href="#"><i class="ri-facebook-fill"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="ri-instagram-line"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="ri-youtube-line"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="ri-linkedin-fill"></i></a>
+						</li>
+					</ul>
+				</div>
 
-        <div class="footer_col">
-          <h4>Tentang Kami</h4>
-          <ul class="footer_links">
-            <li><a href="about_us.html" target="_blank">Staff</a></li>
-            <li>
-              <a href="about_aetherna.html" target="_blank">Tentang Aethera</a>
-            </li>
-          </ul>
-        </div>
+				<div class="footer_col">
+					<h4>Menu Utama</h4>
+					<ul class="footer_links">
+						<li><a href="landing_page.html" >Beranda</a></li>
+						<li><a href="#">Berita</a></li>
+						<li><a href="laman_donasi.html" >Donasi</a></li>
+						<li>
+							<a href="tentang_hutan.html" >Tentang Hutan</a>
+						</li>
+					</ul>
+				</div>
 
-        <div class="footer_col">
-          <h4>Kontak Kami</h4>
-          <ul class="footer_links">
-            <li>
-              <a href="#">
-                <span><i class="ri-phone-fill"></i></span>+62 123456789
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span><i class="ri-record-mail-line"></i></span
-                >aethera@gmail.com
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span><i class="ri-map-pin-2-fill"></i></span>Kampus UI Negeri
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer_bar">
-        Copyright © 2025 Aethera. All rights reserved.
-      </div>
-    </footer>
-    <!-- Footer End -->
-    <script src="../scripts/laman_donasi.js"></script>
-  </body>
+				<div class="footer_col">
+					<h4>Tentang Kami</h4>
+					<ul class="footer_links">
+						<li><a href="about_us.html" >Staff</a></li>
+						<li>
+							<a href="about_aetherna.html" >Tentang Aethera</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer_col">
+					<h4>Kontak Kami</h4>
+					<ul class="footer_links">
+						<li>
+							<a href="#">
+								<span><i class="ri-phone-fill"></i></span>+62 123456789
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span><i class="ri-record-mail-line"></i></span
+								>aethera@gmail.com
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span><i class="ri-map-pin-2-fill"></i></span>Kampus UI Negeri
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer_bar">
+				Copyright © 2025 Aethera. All rights reserved.
+			</div>
+		</footer>
+		<!-- Footer End -->
+		<script src="../scripts/laman_donasi.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+	</body>
 </html>

@@ -51,16 +51,15 @@ ul {
 }
 
 
-.nav-links ul {
+/* .nav-links ul {
   display: flex;
   gap: 18px;
   list-style: none;
   padding: 0;
   margin: 0;
-}
+} */
 
 .nav-links ul li a {
-  text-decoration: none;
   color: var(--text-dark);
   padding: 10px;
   cursor: pointer;
@@ -367,6 +366,8 @@ footer {
 .footer_links {
   display: grid;
   gap: 1rem;
+  padding: 0;
+  text-decoration: none;
 }
 
 .footer_links a {
